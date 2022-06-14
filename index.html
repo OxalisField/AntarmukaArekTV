@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logoarek.png" type="image/x-icon">
+    <title>Arek TV</title>
+</head>
+<body class="bg-dark">
+
+  <header>
+    <p class=" w-100 text-center text-light bg-black m-0 top-brand">Arek TV</p>
+  </header>
+
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
+    <div class="container-fluid pe-0">
+
+      <a class="navbar-brand logoarek py-2 py-lg-0" href="index.html">
+        <img src="assets/logoarek.png" alt="Logo Arek TV" class="img-fluid" width="40em">
+        <p class="navbar-text d-inline  logoarek-text text-light fw-bold" >Arek TV</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--offcanvas-->
+      <div class="offcanvas offcanvas-start bg-dark lead" id="sidebar" tabindex="-1" aria-labelledby="sidebar-label">
+        <!-- <div class="collapse navbar-collapse mb-3 mb-lg-0" id="navbarSupportedContent"> -->
+          <div class="offcanvas-header">
+            <div class="offcanvas-title">
+              <img src="assets/logoarek.png" alt="Logo Arek TV" class="img-fluid" width="40em">
+              <p class="d-inline text-light text-start text-decoration-none bg-dark fw-bold logoarek-text " >Arek TV</p>
+              <button type="button" class="btn-close btn-close-white" id="close-sidebar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+          </div>
+          
+          <ul class="navbar-nav nav-fill mb-3 mb-lg-0 w-100">
+            <!-- <li class="nav-item my-3 my-lg-0 d-lg-none">
+              <a class="nav-link" href="#">
+                <img src="assets/logoarek.png" alt="Logo Arek TV" class="img-fluid" width="40em">
+                <p class="navbar-text d-inline logoarek-text text-light fw-bold" >Arek TV</p>
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link py-4 pt-lg-2 pb-lg-3 active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle py-4 pt-lg-2 pb-lg-3" id="kategori" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Category
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="kategori">
+                <li><a class="dropdown-item">Sports</a></li>
+                <li><a class="dropdown-item">Gaming</a></li>
+                <li><a class="dropdown-item">Politics</a></li>
+                <li><a class="dropdown-item">Tech</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-4 pt-lg-2 pb-lg-3" href="#">Biro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-4 pt-lg-2 pb-lg-3" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-4 pt-lg-2 pb-lg-3" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <!-- <form class="navbar-text" role="search">
+            <input type="search" class="form-control" placeholder="Search" aria-label="Search content" aria-describedby="search-button">
+            <button class="btn btn-secondary" type="button" id="search-button"><i class="bi bi-search"></i></button>
+          </form><br> -->
+        <!-- </div> -->
+      </div>
+
+    </div>
+  </nav>
+
+  <!--Featured video-->
+  <section class="bg-dark pb-0 mb-3">
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <div class="stream-thumbnail d-none d-lg-block col-lg-6 pb-0">
+          <video id="featured" class="featured" controls autoplay muted>
+            <source src="assets/berita.mp4" type="video/mp4">
+            Browser tidak mendukung video
+          </video>
+        </div>
+        <button type="button" id="close-button" class="btn-close btn-close-white displaynone" aria-label="Close picture-in-picture"></button>
+        
+        <!--Jadwal tayang-->
+        <div class="col-lg-6">
+          <table id="acara" class="table table-striped table-secondary table-bordered">
+            <thead>
+              <tr>
+                <th>#</i></th>
+                <th>Sesi</th>
+                <th>acara</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><i class="bi bi-check-square-fill"></i></td>
+                <td>07.00 - 08.00</td>
+                <td>Judul Acara Televisi</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-check-square-fill"></i></td>
+                <td>08.00 - 09.00</td>
+                <td>Judul Acara Televisi</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-square"></i></td>
+                <td>09.00 - 10.00</td>
+                <td>Judul Acara Televisi</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-square"></i></td>
+                <td>10.00 - 11.00</td>
+                <td>Judul Acara Televisi</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-square"></i></td>
+                <td>11.00 - 12.00</td>
+                <td>Judul Acara Televisi</td>
+              </tr>
+              <tr>
+                <td><i class="bi bi-square"></i></td>
+                <td>12.00 - 13.00</td>
+                <td>Judul Acara Televisi</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Promo Acara-->
+  <section class="bg-dark text-light">
+
+    <h2 class="text-light text-center py-3 border-bottom border-light">Program</h2>
+    <div class="text-center py-3 promoAcaraContainer">    
+      <img src="assets/acara klasika.jpeg" alt="Acara Klasika" class="promoAcara img-fluid" data-bs-toggle="modal" data-bs-target="#promoAcara" data-bs-source="assets/promo klasika.mp4">
+    
+      <img src="assets/acara wakul.jpeg" alt="Acara Wakul" class="promoAcara img-fluid" data-bs-toggle="modal" data-bs-target="#promoAcara" data-bs-source="assets/promo wakul.mp4">
+    
+      <img src="assets/acara mata indonesia.jpeg" alt="Acara Mata Indonesia" class="promoAcara img-fluid" data-bs-toggle="modal" data-bs-target="#promoAcara" data-bs-source="assets/promo mata indonesia.mp4">
+    
+      <img src="assets/acara fenomenal.jpeg" alt="Acara Fenomenal" class="promoAcara img-fluid" data-bs-toggle="modal" data-bs-target="#promoAcara" data-bs-source="">
+    
+      <img src="assets/acara aura muslimah.jpeg" alt="Acara Aura Muslimah" class="promoAcara img-fluid" data-bs-toggle="modal" data-bs-target="#promoAcara" data-bs-source="">
+    </div>
+
+    <!--Modal video-->
+    <div class="modal fade" id="promoAcara" tabindex="-1" aria-labelledby="promoAcaraLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-header p-1">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <video id="promo" class="promo" height="auto" width="100%" controls>
+              <source src="" type="video/mp4">
+              Browser tidak mendukung audio
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Feed-->
+  <section class="bg-dark text-light">
+    <h2 class="text-light text-center py-3 border-bottom border-light">Kategori</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+
+          <div class="row align-items-center my-3">
+            <div class="col-5">
+              <img src="assets/sports.jpg" alt="Sports" class="img-fluid feed-image">
+            </div>
+            <div class="col-7">
+              <h1 class="h4">Sports</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, amet saepe! Quisquam ipsum enim ducimus, reprehenderit iure iste quam unde corrupti? Suscipit autem accusantium eius!</p>
+            </div>
+          </div>
+
+          <div class="row align-items-center my-3">
+            <div class="col-5">
+              <img src="assets/gaming.jpeg" alt="Gaming" class="img-fluid feed-image">
+            </div>
+            <div class="col-7">
+              <h1 class="h4">Gaming</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, amet saepe! Quisquam ipsum enim ducimus, reprehenderit iure iste quam unde corrupti? Suscipit autem accusantium eius!</p>
+            </div>
+          </div>
+
+          <div class="row align-items-center my-3">
+            <div class="col-5">
+              <img src="assets/politics.png" alt="Politics" class="img-fluid feed-image">
+            </div>
+            <div class="col-7">
+              <h1 class="h4">Politics</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, amet saepe! Quisquam ipsum enim ducimus, reprehenderit iure iste quam unde corrupti? Suscipit autem accusantium eius!</p>
+            </div>
+          </div>
+
+          <div class="row align-items-center my-3">
+            <div class="col-5">
+              <img src="assets/tech.jpg" alt="Tech" class="img-fluid feed-image">
+            </div>
+            <div class="col-7">
+              <h1 class="h4">Tech</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, amet saepe! Quisquam ipsum enim ducimus, reprehenderit iure iste quam unde corrupti? Suscipit autem accusantium eius!</p>
+            </div>
+          </div>
+
+        </div>
+        <!--Map-->
+        <div class="col-lg-5">
+          <div class="weather-thumbnail my-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9913.879860697836!2d112.70009471982385!3d-7.44868521054978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e15cb9a7e18f%3A0x2a7d6470ae3175b5!2sArek%20Televisi!5e0!3m2!1sen!2sid!4v1653030020120!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-location" aria-label="Lokasi Arek TV"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+  <!--Footer-->
+  <footer class="footer bg-arek">
+    <div class="container text-light py-3">
+      <div class="row justify-content-center">
+        <div class="col-10 text-center">
+
+          <p class="lead">Head Office</p>
+          <p>Pondok Mutiara K2-A Sidoarjo 61226. Phone 031-99707789</p>
+
+          <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </foooter>
+
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

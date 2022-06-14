@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logoarek.png" type="image/x-icon">
+    <title>Contact | Arek TV</title>
+</head>
+<body class="bg-dark">
+  <header>
+    <p class=" w-100 text-center text-light bg-black m-0 top-brand">Arek TV</p>
+  </header>
+
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
+    <div class="container-fluid pe-0">
+
+      <a class="navbar-brand logoarek py-2 py-lg-0" href="index.html">
+        <img src="assets/logoarek.png" alt="Logo Arek TV" class="img-fluid" width="40em">
+        <p class="navbar-text d-inline  logoarek-text text-light fw-bold" >Arek TV</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--offcanvas-->
+      <div class="offcanvas offcanvas-start bg-dark lead" id="sidebar" tabindex="-1" aria-labelledby="sidebar-label">
+        <!-- <div class="collapse navbar-collapse mb-3 mb-lg-0" id="navbarSupportedContent"> -->
+          <div class="offcanvas-header">
+            <div class="offcanvas-title">
+              <img src="assets/logoarek.png" alt="Logo Arek TV" class="img-fluid" width="40em">
+              <p class="d-inline text-light text-start text-decoration-none bg-dark fw-bold logoarek-text " >Arek TV</p>
+              <button type="button" class="btn-close btn-close-white" id="close-sidebar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+          </div>
+          
+          <ul class="navbar-nav nav-fill mb-3 mb-lg-0 w-100">
+            <!-- <li class="nav-item my-3 my-lg-0 d-lg-none">
+              <a class="nav-link" href="#">
+                <img src="assets/logoarek.png" alt="Logo Arek TV" class="img-fluid" width="40em">
+                <p class="navbar-text d-inline logoarek-text text-light fw-bold" >Arek TV</p>
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link py-4 pt-lg-2 pb-lg-3" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-4 pt-lg-2 pb-lg-3" href="#">Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-4 pt-lg-2 pb-lg-3" href="#">Biro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-4 pt-lg-2 pb-lg-3" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-4 pt-lg-2 pb-lg-3 active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <!-- <form class="navbar-text" role="search">
+            <input type="search" class="form-control" placeholder="Search" aria-label="Search content" aria-describedby="search-button">
+            <button class="btn btn-secondary" type="button" id="search-button"><i class="bi bi-search"></i></button>
+          </form><br> -->
+        <!-- </div> -->
+      </div>
+
+    </div>
+  </nav>
+
+  <header class="bg-arek text-light text-center p-4 mb-5">
+    <h1 class="display-5">Hubungi Kami</h1>
+  </header>
+
+  <!--Contact Details-->
+  <section>
+    <div class="container text-md-center text-light border-bottom border-light">
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-5">
+          <h4>Sales</h4>
+          <p>sales@arek.tv</p>
+          <p>admin@arek.tv</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h4>Kantor</h4>
+          <p>Ruko Pondok Mutiara K2-A</p>
+          <p>Sidoarjo 61226</p>
+          <p>Telp. 031-99707789</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Contact Form-->
+  <div class="container-md text-light my-5">
+    <h4 class="display-6 w-100 text-center">Hubungi Kami</h4>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <form>
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="nama">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject">
+          </div>
+          <div class="mb-3">
+            <label for="pesan" class="form-label">Pesan Anda...</label>
+            <textarea class="form-control" id="pesan" style="height: 100px;"></textarea>
+            
+          </div>
+          <button type="submit" class="btn btn-outline-success rounded-pill">Kirim</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

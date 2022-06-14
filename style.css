@@ -1,0 +1,107 @@
+.top-brand{
+    font-size: smaller;
+}
+
+.nav-item:hover, .active{
+    background-color: rgb(26, 26, 26);
+}
+
+.featured{
+    width: 100%;
+    height: 250pt;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.pip{
+    width: 250pt;
+    height: auto;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
+
+#close-sidebar{
+    position: relative;
+    left: 140pt;
+}
+
+#close-button{
+    position: fixed;
+    right: 5px;
+    bottom: 150pt;
+}
+
+.displaynone{
+    display: none;
+}
+
+.displayinlineblock{
+    display: inline-block;
+}
+
+table{
+    height: 250pt;
+
+}
+
+.stream-thumbnail, .weather-thumbnail, iframe{
+    position: relative;
+    z-index: 0;
+}
+
+.promoAcaraContainer{
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+}
+
+.promoAcara{
+    width: 160pt;
+    height: 120pt;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.img-text{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 2rem;
+    text-shadow: 2px 2px black;
+}
+
+.feed-image{
+    width: 100%;
+    height: 100pt;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.map-location{
+    width: 100%;
+    height: 20rem;
+}
+
+.logoarek-text{
+    vertical-align: middle;
+    font-size: x-large;
+}
+
+.footer{
+    position: sticky;
+    bottom: 0;
+    z-index: -2;
+}
+
+.bg-arek{
+    background-color: rgb(3, 99, 0);
+}
+/* lightbox */
