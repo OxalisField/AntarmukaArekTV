@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/logoarek.png" type="image/x-icon">
     <title>Arek TV</title>
@@ -97,39 +101,36 @@
           <table id="acara" class="table table-striped table-secondary table-bordered">
             <thead>
               <tr>
-                <th>#</i></th>
                 <th>Sesi</th>
                 <th>acara</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><i class="bi bi-check-square-fill"></i></td>
                 <td>07.00 - 08.00</td>
                 <td>Judul Acara Televisi</td>
+                <td rowspan="2">Iklan</td>
               </tr>
               <tr>
-                <td><i class="bi bi-check-square-fill"></i></td>
                 <td>08.00 - 09.00</td>
                 <td>Judul Acara Televisi</td>
               </tr>
               <tr>
-                <td><i class="bi bi-square"></i></td>
                 <td>09.00 - 10.00</td>
                 <td>Judul Acara Televisi</td>
+                <td rowspan="2">Iklan</td>
               </tr>
               <tr>
-                <td><i class="bi bi-square"></i></td>
                 <td>10.00 - 11.00</td>
                 <td>Judul Acara Televisi</td>
               </tr>
               <tr>
-                <td><i class="bi bi-square"></i></td>
                 <td>11.00 - 12.00</td>
                 <td>Judul Acara Televisi</td>
+                <td rowspan="2">Iklan</td>
               </tr>
               <tr>
-                <td><i class="bi bi-square"></i></td>
                 <td>12.00 - 13.00</td>
                 <td>Judul Acara Televisi</td>
               </tr>
@@ -141,7 +142,7 @@
   </section>
 
   <!--Promo Acara-->
-  <section class="bg-dark text-light">
+  <!-- <section class="bg-dark text-light">
 
     <h2 class="text-light text-center py-3 border-bottom border-light">Program</h2>
     <div class="text-center py-3 promoAcaraContainer">    
@@ -154,6 +155,52 @@
       <img src="assets/acara fenomenal.jpeg" alt="Acara Fenomenal" class="promoAcara img-fluid" data-bs-toggle="modal" data-bs-target="#promoAcara" data-bs-source="">
     
       <img src="assets/acara aura muslimah.jpeg" alt="Acara Aura Muslimah" class="promoAcara img-fluid" data-bs-toggle="modal" data-bs-target="#promoAcara" data-bs-source="">
+    </div>-->
+
+    <!--Modal video-->
+    <!--<div class="modal fade" id="promoAcara" tabindex="-1" aria-labelledby="promoAcaraLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-header p-1">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <video id="promo" class="promo" height="auto" width="100%" controls>
+              <source src="" type="video/mp4">
+              Browser tidak mendukung audio
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  
+  <!--Promo Acara-->
+  <section class="bg-dark">
+
+    <h2 class="text-light text-center py-3 mb-3 border-bottom border-light">Program</h2>
+
+    <!--Swiper-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/acara klasika.jpeg" alt="Acara Klasika" class="promoAcara img-fluid" data-bs-toggle="modal" data-bs-target="#promoAcara" data-bs-source="assets/promo klasika.mp4"></div>
+        <div class="swiper-slide">
+          <img src="assets/acara wakul.jpeg" alt="Acara Wakul" class="promoAcara img-fluid" data-bs-toggle="modal" data-bs-target="#promoAcara" data-bs-source="assets/promo wakul.mp4"></div>
+        <div class="swiper-slide">
+          <img src="assets/acara mata indonesia.jpeg" alt="Acara Mata Indonesia" class="promoAcara img-fluid" data-bs-toggle="modal" data-bs-target="#promoAcara" data-bs-source="assets/promo mata indonesia.mp4"></div>
+        <div class="swiper-slide">
+          <img src="assets/acara fenomenal.jpeg" alt="Acara Fenomenal" class="promoAcara img-fluid" data-bs-toggle="modal" data-bs-target="#promoAcara" data-bs-source=""></div>
+        <div class="swiper-slide">
+          <img src="assets/acara aura muslimah.jpeg" alt="Acara Aura Muslimah" class="promoAcara img-fluid" data-bs-toggle="modal" data-bs-target="#promoAcara" data-bs-source=""></div>
+        <div class="swiper-slide">Poster Acara</div>
+        <div class="swiper-slide">Poster Acara</div>
+        <div class="swiper-slide">Poster Acara</div>
+        <div class="swiper-slide">Poster Acara</div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
 
     <!--Modal video-->
@@ -239,7 +286,7 @@
         <div class="col-10 text-center">
 
           <p class="lead">Head Office</p>
-          <p>Pondok Mutiara K2-A Sidoarjo 61226. Phone 031-99707789</p>
+          <p>Jl. Kahuripan Raya No.Kav 9-11, Entalsewu, Kec. Buduran, Kabupaten Sidoarjo, Jawa Timur 61226.</p>
 
           <div class="row">
             <div class="col">
@@ -264,6 +311,7 @@
     
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

@@ -55,5 +55,16 @@ promoAcara.addEventListener('hide.bs.modal', () =>{
     videoPromo.pause();
 })
     
-    
-    
+// Swiper
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    // slidesPerGroup: 3,
+    loop: true,
+    freeMode: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
