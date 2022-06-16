@@ -10,11 +10,12 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
+    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/logoarek.png" type="image/x-icon">
     <title>Arek TV</title>
 </head>
-<body class="bg-dark">
+<body class="bg-dark p-0 m-0">
 
   <header>
     <p class=" w-100 text-center text-light bg-black m-0 top-brand">Arek TV</p>
@@ -87,14 +88,14 @@
   <!--Featured video-->
   <section class="bg-dark pb-0 mb-3">
     <div class="container-fluid p-0">
-      <div class="row g-0">
+      <div class="row bg-dark">
         <div class="stream-thumbnail d-none d-lg-block col-lg-6 pb-0">
-          <video id="featured" class="featured" controls autoplay muted>
-            <source src="assets/berita.mp4" type="video/mp4">
+          <video id="featured" class="featured">
+            <source src="http://wowza58.indostreamserver.com:1935/arektv/live/playlist.m3u8" type="application/x-mpegURL">
             Browser tidak mendukung video
           </video>
         </div>
-        <button type="button" id="close-button" class="btn-close btn-close-white displaynone" aria-label="Close picture-in-picture"></button>
+        <button type="button" id="close-button" class="btn-close btn-close-white d-none" aria-label="Close picture-in-picture"></button>
         
         <!--Jadwal tayang-->
         <div class="col-lg-6">
@@ -103,14 +104,12 @@
               <tr>
                 <th>Sesi</th>
                 <th>acara</th>
-                <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>07.00 - 08.00</td>
                 <td>Judul Acara Televisi</td>
-                <td rowspan="2">Iklan</td>
               </tr>
               <tr>
                 <td>08.00 - 09.00</td>
@@ -119,7 +118,6 @@
               <tr>
                 <td>09.00 - 10.00</td>
                 <td>Judul Acara Televisi</td>
-                <td rowspan="2">Iklan</td>
               </tr>
               <tr>
                 <td>10.00 - 11.00</td>
@@ -128,7 +126,6 @@
               <tr>
                 <td>11.00 - 12.00</td>
                 <td>Judul Acara Televisi</td>
-                <td rowspan="2">Iklan</td>
               </tr>
               <tr>
                 <td>12.00 - 13.00</td>
@@ -274,6 +271,10 @@
           <div class="weather-thumbnail my-3">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9913.879860697836!2d112.70009471982385!3d-7.44868521054978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e15cb9a7e18f%3A0x2a7d6470ae3175b5!2sArek%20Televisi!5e0!3m2!1sen!2sid!4v1653030020120!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-location" aria-label="Lokasi Arek TV"></iframe>
           </div>
+
+          <div class="d-inline-block iklan text-dark bg-light">
+            <div class="lead iklan-text">Iklan</div>
+          </div>
         </div>
       </div>
     </div>
@@ -286,7 +287,7 @@
         <div class="col-10 text-center">
 
           <p class="lead">Head Office</p>
-          <p>Jl. Kahuripan Raya No.Kav 9-11, Entalsewu, Kec. Buduran, Kabupaten Sidoarjo, Jawa Timur 61226.</p>
+          <p>Jl. Kahuripan Raya No.Kav 7, Entalsewu, Kec. Buduran, Kabupaten Sidoarjo, Jawa Timur 61226.</p>
 
           <div class="row">
             <div class="col">

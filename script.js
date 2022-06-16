@@ -2,35 +2,35 @@ const featuredVideo = document.querySelector('#featured');
 const closeFeatured = document.querySelector('#close-button');
 let pipIsClosed = false;
 
-window.onscroll = function () {
-    if (window.matchMedia("(min-width: 992px)").matches) {
-        if ((document.documentElement.scrollTop > 635 || document.body.scrollTop > 635) && pipIsClosed == false) {
-            featuredVideo.classList.remove('featured');
-            featuredVideo.classList.add('pip');
-            closeFeatured.classList.add('d-inline-block');
-            closeFeatured.classList.remove('d-none');
-            }
-        else{
-            featuredVideo.classList.remove('pip');
-            featuredVideo.classList.add('featured');
-            closeFeatured.classList.add('d-none');
-            closeFeatured.classList.remove('d-inline-block');
-        }
+// window.onscroll = function () {
+//     if (window.matchMedia("(min-width: 992px)").matches) {
+//         if ((document.documentElement.scrollTop > 400 || document.body.scrollTop > 400) && pipIsClosed == false) {
+//             featuredVideo.classList.remove('featured');
+//             featuredVideo.classList.add('pip');
+//             closeFeatured.classList.add('d-inline-block');
+//             closeFeatured.classList.remove('d-none');
+//             }
+//         else{
+//             featuredVideo.classList.remove('pip');
+//             featuredVideo.classList.add('featured');
+//             closeFeatured.classList.add('d-none');
+//             closeFeatured.classList.remove('d-inline-block');
+//         }
         
-        closeFeatured.addEventListener("click", () => {
-            featuredVideo.classList.remove('pip');
-            featuredVideo.classList.add('featured');
-            featuredVideo.pause();
-            closeFeatured.classList.add('d-none');
-            closeFeatured.classList.remove('d-inline-block');
-            pipIsClosed = true;
-        } );
-      } else {
-        closeFeatured.classList.add('d-none');
-        closeFeatured.classList.remove('d-inline-block');
-      }
+//         closeFeatured.addEventListener("click", () => {
+//             featuredVideo.classList.remove('pip');
+//             featuredVideo.classList.add('featured');
+//             featuredVideo.pause();
+//             closeFeatured.classList.add('d-none');
+//             closeFeatured.classList.remove('d-inline-block');
+//             pipIsClosed = true;
+//         } );
+//       } else {
+//         closeFeatured.classList.add('d-none');
+//         closeFeatured.classList.remove('d-inline-block');
+//       }
     
-}
+// }
 
 // Modal Promo Acara
 const promoAcara = document.getElementById('promoAcara');
@@ -67,4 +67,36 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+  });
+
+// Streaming
+fluidPlayer(
+  'featured',
+  {
+    layoutControls: {
+      "controlBar": {
+        "autoHideTimeout": 3,
+        "animated": true,
+        "autoHide": true
+      },
+      "htmlOnPauseBlock": {
+        "html": null,
+        "height": null,
+        "width": null
+      },
+      "autoPlay": true,
+      "mute": false,
+      "allowTheatre": false,
+      "playPauseAnimation": true,
+      "playbackRateEnabled": true,
+      "allowDownload": false,
+      "playButtonShowing": false,
+      // "fillToContainer": true,
+      "posterImage": ""
+    },
+    "vastOptions": {
+      "adList": [],
+      "adCTAText": false,
+      "adCTATextPosition": ""
+    }
   });
