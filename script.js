@@ -4,23 +4,23 @@ let pipIsClosed = false;
 
 // window.onscroll = function () {
 //     if (window.matchMedia("(min-width: 992px)").matches) {
-//         if ((document.documentElement.scrollTop > 400 || document.body.scrollTop > 400) && pipIsClosed == false) {
-//             featuredVideo.classList.remove('featured');
-//             featuredVideo.classList.add('pip');
+//         if ((document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) && pipIsClosed == false) {
+//             // featuredVideo.classList.remove('featured');
+//             // featuredVideo.classList.add('pip');
 //             closeFeatured.classList.add('d-inline-block');
 //             closeFeatured.classList.remove('d-none');
 //             }
 //         else{
-//             featuredVideo.classList.remove('pip');
-//             featuredVideo.classList.add('featured');
+//             // featuredVideo.classList.remove('pip');
+//             // featuredVideo.classList.add('featured');
 //             closeFeatured.classList.add('d-none');
 //             closeFeatured.classList.remove('d-inline-block');
 //         }
         
 //         closeFeatured.addEventListener("click", () => {
-//             featuredVideo.classList.remove('pip');
-//             featuredVideo.classList.add('featured');
-//             featuredVideo.pause();
+//             // featuredVideo.classList.remove('pip');
+//             // featuredVideo.classList.add('featured');
+//             // featuredVideo.pause();
 //             closeFeatured.classList.add('d-none');
 //             closeFeatured.classList.remove('d-inline-block');
 //             pipIsClosed = true;
@@ -84,14 +84,14 @@ fluidPlayer(
         "height": null,
         "width": null
       },
-      "autoPlay": true,
+      // "autoPlay": true,
       "mute": false,
       "allowTheatre": false,
       "playPauseAnimation": true,
       "playbackRateEnabled": true,
       "allowDownload": false,
       "playButtonShowing": false,
-      // "fillToContainer": true,
+      "fillToContainer": true,
       "posterImage": ""
     },
     "vastOptions": {

@@ -7,6 +7,10 @@ html,body
     overflow-x: hidden; 
 }
 
+hr{
+    border-style: groove;
+}
+
 .top-brand{
     font-size: smaller;
 }
@@ -16,7 +20,7 @@ html,body
 }
 
 .featured{
-    width: auto;
+    max-width: 50vw;
     height: 250pt;
     /* object-fit: cover;
     object-position: center;
@@ -30,37 +34,45 @@ html,body
     position: relative;
 } */
 
-.pip{
+/* .pip{
     width: 250pt;
     height: auto;
     position: fixed;
     right: 5px;
     bottom: 5px;
     z-index: 10;
-}
+} */
 
 #close-sidebar{
     position: relative;
     left: 140pt;
 }
 
-#close-button{
+/* #close-button{
     position: fixed;
     right: 5px;
     bottom: 150pt;
-}
+} */
 
-.displaynone{
+/* .displaynone{
     display: none;
 }
 
 .displayinlineblock{
     display: inline-block;
+} */
+
+.table-acara, .stream-thumbnail{
+    height: 250pt !important;
 }
 
-table{
-    height: 250pt;
+.table-acara{
+    overflow: auto;
+}
 
+#acara > thead > tr > th{
+    position: sticky;
+    top: 0px;
 }
 
 body > section.bg-dark.text-light > div > div > div.col-lg-5 > div > iframe{
@@ -134,6 +146,28 @@ body > section.bg-dark.text-light > div > div > div.col-lg-5 > div > iframe{
 .bg-arek{
     background-color: rgb(3, 99, 0);
 }
+/* Scrolbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f121;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 1vw;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 /* Swiper */
 .swiper {
@@ -170,3 +204,44 @@ body > section.bg-dark.text-light > div > div > div.col-lg-5 > div > iframe{
     object-fit: cover;
     cursor: pointer;
   }
+
+/* Artikel */
+.author{
+    padding: 0 0 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.iklan-trending{
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.portal-image{
+    width: 25%;
+    height: 40pt;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+.portal-text{
+    width: 70%;
+    vertical-align: top;
+}
+
+.artikel-berita{
+    position: sticky;
+    bottom: 1px;
+}
+
+.trending{
+    position: sticky;
+    top: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+    .portal-text{
+        max-width: 60%;
+        font-size: 14px;
+    }
+}

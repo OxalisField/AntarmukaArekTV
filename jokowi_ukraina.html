@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logoarek.png" type="image/x-icon">
+    <title>Arek TV</title>
+</head>
+<body class="bg-dark p-0 m-0">
+
+  <header>
+    <p class=" w-100 text-center text-light bg-black m-0 top-brand">Arek TV</p>
+  </header>
+
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 border-bottom">
+    <div class="container-fluid pe-0">
+
+      <a class="navbar-brand logoarek py-2 py-lg-0" href="index.html">
+        <img src="assets/logoarek.png" alt="Logo Arek TV" class="img-fluid" width="40em">
+        <p class="navbar-text d-inline  logoarek-text text-light fw-bold" >Arek TV</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!--offcanvas-->
+      <div class="offcanvas offcanvas-start bg-dark lead" id="sidebar" tabindex="-1" aria-labelledby="sidebar-label">
+        <!-- <div class="collapse navbar-collapse mb-3 mb-lg-0" id="navbarSupportedContent"> -->
+          <div class="offcanvas-header">
+            <div class="offcanvas-title">
+              <img src="assets/logoarek.png" alt="Logo Arek TV" class="img-fluid" width="40em">
+              <p class="d-inline text-light text-start text-decoration-none bg-dark fw-bold logoarek-text " >Arek TV</p>
+              <button type="button" class="btn-close btn-close-white" id="close-sidebar" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+          </div>
+          
+          <ul class="navbar-nav nav-fill mb-3 mb-lg-0 w-100">
+            <!-- <li class="nav-item my-3 my-lg-0 d-lg-none">
+              <a class="nav-link" href="#">
+                <img src="assets/logoarek.png" alt="Logo Arek TV" class="img-fluid" width="40em">
+                <p class="navbar-text d-inline logoarek-text text-light fw-bold" >Arek TV</p>
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link py-4 pt-lg-2 pb-lg-3" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle py-4 pt-lg-2 pb-lg-3" id="kategori" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Category
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="kategori">
+                <li><a class="dropdown-item">Sports</a></li>
+                <li><a class="dropdown-item">Gaming</a></li>
+                <li><a class="dropdown-item">Politics</a></li>
+                <li><a class="dropdown-item">Tech</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-4 pt-lg-2 pb-lg-3" href="#">Biro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-4 pt-lg-2 pb-lg-3" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-4 pt-lg-2 pb-lg-3" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <!-- <form class="navbar-text" role="search">
+            <input type="search" class="form-control" placeholder="Search" aria-label="Search content" aria-describedby="search-button">
+            <button class="btn btn-secondary" type="button" id="search-button"><i class="bi bi-search"></i></button>
+          </form><br> -->
+        <!-- </div> -->
+      </div>
+
+    </div>
+  </nav>
+  
+  <main class="bg-dark">
+    <div class="container text-light mt-5">
+      <div class="row">
+        <div class="col-lg-9 col-md-8">
+          <h1>Presiden Jokowi Siap jadi Jembatan Perdamaian antara Rusia dan Ukraina</h1>
+          <div class="author text-secondary">
+            <time id="publishDate" datetime="2022-06-24 09:09:00">
+              · Jumat, 01 Juli 2022 - 00:12:00 WIB
+            </time>
+          </div>
+
+          <figure class="figure">
+            <img src="assets/jokowi_ukraina.jpeg" alt="Jokowi bertemu Putin" class="figure-image img-fluid">
+            <figcaption class="figure-caption mt-3">Presiden Joko Widodo (Jokowi) bertemu dengan Presiden Rusia Vladimir Putin di Istana Kremlin, Moskow, Kamis (30/6/2022). (Biro Setpres)</figcaption>
+          </figure>
+
+          <article>
+            <p>Presiden Joko Widodo (Jokowi) bertemu dengan Presiden Rusia Vladimir Putin di Istana Kremlin, Moskow, Kamis (30/6/2022). Jokowi menegaskan, bahwasanya konstitusi mengamanatkan agar Indonesia selalu berusaha berkontribusi bagi terciptanya perdamaian dunia.</p>
+            <p>"Isu perdamaian dan kemanusiaan selalu menjadi prioritas politik luar negeri Indonesia. Dalam konteks inilah, saya lakukan kunjungan ke Kyiv dan Moskow,” tutur Jokowi menyampaikan keterangan pers.</p>
+            <p>Lebih jauh dikatakan, meski situasi saat ini masih sangat sulit, namun Kepala Negara memastikan bahwa penyelesaian damai penting untuk terus dikedepankan. Selain itu, ruang-ruang dialog juga harus terus dibuka.</p>
+            <p>“Saya telah sampaikan pesan Presiden Zelensky untuk Presiden Putin. Saya sampaikan kesiapan saya untuk menjadi jembatan komunikasi antara dua pemimpin tersebut,” ucapnya.</p>
+            <p>Sebelumnya, Jokowi baru saja dari Ukraina bertemu dengan Volodymyr Zelenskyy atau Zelensky. Usai dari Ukraina, Jokowi langsung menuju Rusia.</p>            
+            <p>Artikel ini telah tayang di <a href="https://www.inews.id/">www.inews.id</a> dengan judul "<a href="https://www.inews.id/news/nasional/presiden-jokowi-siap-jadi-jembatan-perdamaian-antara-rusia-dan-ukraina">Presiden Jokowi Siap jadi Jembatan Perdamaian antara Rusia dan Ukraina.</a>"</p>
+            <p>Download aplikasi Inews.id untuk akses berita lebih mudah dan cepat: <a href="https://www.inews.id/apps">https://www.inews.id/apps</a></p>
+          </article>
+        </div>
+        
+        <!-- Trending -->
+        <div class="col-lg-3 col-md-4 justify-content-center mt-5">
+          <aside class="trending">
+            <div class="iklan-trending bg-light mb-3">
+              <div class="lead iklan-text text-dark">Iklan</div>
+            </div>
+            <div class="iklan-trending bg-light mb-3">
+              <div class="lead iklan-text text-dark">Iklan</div>
+            </div>
+            <h4 class="text-light text-center py-2 border-bottom border-secondary">Trending</h4>
+            <div class="news-portal position-relative d-inline-block my-3">
+              <img src="assets/emas_antam.jpg" alt="Portal emas antam" class="img-fluid d-inline-block portal-image">
+              <h6 class="d-inline-block portal-text ps-2">Harga Emas Antam Hari Ini Anjlok, Paling Murah Rp546.000</h6>
+              <a href="emas_antam.html" class="stretched-link"></a>
+            </div>
+            <hr>
+            <div class="news-portal position-relative d-inline-block my-3">
+              <img src="assets/jokowi_ukraina.jpeg" alt="Portal jokowi ukraina" class="img-fluid d-inline-block portal-image">
+              <h6 class="d-inline-block portal-text ps-2">Presiden Jokowi Siap jadi Jembatan Perdamaian antara Rusia dan Ukraina</h6>
+              <a href="jokowi_ukraina.html" class="stretched-link"></a>
+            </div>
+            <hr>
+            <div class="news-portal position-relative d-inline-block my-3">
+              <img src="assets/jokowi_pertemuan.jpg" alt="Portal jokowi pertemuan" class="img-fluid d-inline-block portal-image">
+              <h6 class="d-inline-block portal-text ps-2">Presiden Jokowi Ungkap Isi Pertemuan dengan Putin</h6>
+              <a href="jokowi_pertemuan.html" class="stretched-link"></a>
+            </div>
+            <hr>
+            <div class="news-portal position-relative d-inline-block my-3">
+              <img src="assets/emas_antam.jpg" alt="Portal emas antam" class="img-fluid d-inline-block portal-image">
+              <h6 class="d-inline-block portal-text ps-2">Harga Emas Antam Hari Ini Anjlok, Paling Murah Rp546.000</h6>
+            </div>
+            <hr>
+            <div class="news-portal position-relative d-inline-block my-3">
+              <img src="assets/emas_antam.jpg" alt="Portal emas antam" class="img-fluid d-inline-block portal-image">
+              <h6 class="d-inline-block portal-text ps-2">Harga Emas Antam Hari Ini Anjlok, Paling Murah Rp546.000</h6>
+            </div>
+            <hr>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </main>
+    
+  <!--Footer-->
+  <footer class="footer bg-arek">
+    <div class="container text-light py-3">
+      <div class="row justify-content-center">
+        <div class="col-10 text-center">
+
+          <p class="lead">Head Office</p>
+          <p>Jl. Kahuripan Raya No.Kav 7, Entalsewu, Kec. Buduran, Kabupaten Sidoarjo, Jawa Timur 61226.</p>
+
+          <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+            <div class="col">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </foooter>
+
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
