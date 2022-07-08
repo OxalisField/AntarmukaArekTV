@@ -92,7 +92,7 @@ fluidPlayer(
       "allowDownload": false,
       "playButtonShowing": false,
       "fillToContainer": true,
-      "posterImage": ""
+      "posterImage": "assets/poster_image.jpeg"
     },
     "vastOptions": {
       "adList": [],
@@ -100,3 +100,6 @@ fluidPlayer(
       "adCTATextPosition": ""
     }
   });
+
+// SimpleBar
+new SimpleBar(document.querySelector(".table-acara"));
