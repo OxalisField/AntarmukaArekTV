@@ -2,36 +2,6 @@ const featuredVideo = document.querySelector('#featured');
 const closeFeatured = document.querySelector('#close-button');
 let pipIsClosed = false;
 
-// window.onscroll = function () {
-//     if (window.matchMedia("(min-width: 992px)").matches) {
-//         if ((document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) && pipIsClosed == false) {
-//             // featuredVideo.classList.remove('featured');
-//             // featuredVideo.classList.add('pip');
-//             closeFeatured.classList.add('d-inline-block');
-//             closeFeatured.classList.remove('d-none');
-//             }
-//         else{
-//             // featuredVideo.classList.remove('pip');
-//             // featuredVideo.classList.add('featured');
-//             closeFeatured.classList.add('d-none');
-//             closeFeatured.classList.remove('d-inline-block');
-//         }
-        
-//         closeFeatured.addEventListener("click", () => {
-//             // featuredVideo.classList.remove('pip');
-//             // featuredVideo.classList.add('featured');
-//             // featuredVideo.pause();
-//             closeFeatured.classList.add('d-none');
-//             closeFeatured.classList.remove('d-inline-block');
-//             pipIsClosed = true;
-//         } );
-//       } else {
-//         closeFeatured.classList.add('d-none');
-//         closeFeatured.classList.remove('d-inline-block');
-//       }
-    
-// }
-
 // Modal Promo Acara
 const promoAcara = document.getElementById('promoAcara');
 const videoPromo = document.getElementById('promo');

@@ -242,6 +242,32 @@ body > section.bg-dark.text-light > div > div > div.col-lg-5 > div > iframe{
     top: 1px;
 }
 
+/* Biro */
+.biro-caption-primary{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.biro-location-primary, .biro-date-primary, .biro-date-secondary{
+    font-size: smaller;
+}
+
+.biro-location-primary{
+    background-color: black;
+    display: inline-block;
+    padding: 3px 7px;
+}
+
+.biro-thumbnail{
+    aspect-ratio: 16 / 10;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
 @media only screen and (min-width: 768px) {
     .portal-text{
         max-width: 60%;
